@@ -20,7 +20,7 @@ pub mod adder {
         }
 
         #[ink(message)]
-        pub fn get(&self) -> bool {
+        pub fn get(&self) -> u32 {
             todo!()
         }
     }
