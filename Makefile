@@ -26,13 +26,8 @@ clean-azero:
 clean: # Remove all node data
 clean: clean-azero
 
-.PHONY: bootstrap-azero
-bootstrap-azero: # Bootstrap the node data
-bootstrap-azero:
-	cd devnet-azero && \
-	cp azero_chainspec.json 5D34dL5prEUaGNQtPPZ3yN5Y6BnkfXunKXXz6fo7ZJbLwRRH/chainspec.json
 
 .PHONY: devnet-azero
 devnet-azero: # Run azero devnet
-devnet-azero: bootstrap-azero
+devnet-azero:
 	docker-compose -f ./devnet-azero/devnet-azero-compose.yml up
