@@ -12,20 +12,14 @@ release: # build release binary and contract artifacts
 release:
 	cargo +nightly contract build --release
 
-.PHONY: clean-azero
-clean-azero: # Remove azero node data
-clean-azero:
+.PHONY: clean
+clean: # Remove all node data
+clean:
 	cd devnet-azero && rm -rf \
 	5*/chains/a0dnet1/db \
 	5*/chains/a0dnet1/network \
 	5*/backup-stash \
-	5*/chainspec.json \
 	&& echo "Done azero clean"
-
-.PHONY: clean
-clean: # Remove all node data
-clean: clean-azero
-
 
 .PHONY: devnet-azero
 devnet-azero: # Run azero devnet
