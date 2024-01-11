@@ -4,9 +4,7 @@
 pub mod adder {
 
     #[ink(storage)]
-    pub struct Adder {
-        counter: u32,
-    }
+    pub struct Adder {}
 
     impl Adder {
         #[ink(constructor)]
