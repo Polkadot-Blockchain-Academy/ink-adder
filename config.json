@@ -1,0 +1,5 @@
+{
+  "projectFiles": ["Cargo.toml", "lib.rs"],
+  "typechainGeneratedPath": "types",
+  "workspacePath": "."
+}

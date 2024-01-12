@@ -3,17 +3,19 @@
 #[ink::contract]
 pub mod adder {
 
+    pub const VERSION: u32 = 1;
+
     #[ink(storage)]
     pub struct Adder {}
 
     impl Adder {
         #[ink(constructor)]
         pub fn new() -> Self {
-            todo!()
+            Self {}
         }
 
         #[ink(message)]
-        pub fn add(&mut self) {
+        pub fn add(&mut self, _value: u32) {
             todo!()
         }
 

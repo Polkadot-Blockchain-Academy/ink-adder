@@ -25,6 +25,12 @@ cargo install cargo-dylint dylint-link
 cargo +nightly install cargo-contract --vers 3.2.0 --force --locked
 ```
 
+## Install file watcher:
+
+```bash
+cargo install cargo-watch
+```
+
 # Instructions
 
 - Fill in the blanks creating a contract the keeps track of a counter, adding a value to it with every `add` transaction.
@@ -33,6 +39,28 @@ cargo +nightly install cargo-contract --vers 3.2.0 --force --locked
 - Deploy and interact with the contract by adding a value. Retrieve the updated value.
  - Use the `//Alice` (`bottom drive obey lake curtain smoke basket hold race lonely fit walk/Alice`) account to sign your transactions, it has some funds to cover the gas fees. Add it to [polkadot.js extension](https://polkadot.js.org/extension/) .
 
-## License
+## AlephZero devnet deployment
+
+Run devnet:
+
+```bash
+make devnet
+```
+
+Compile & deploy:
+
+```bash
+make compile
+make deploy
+```
+
+## AlephZero testnet deployment
+
+```bash
+make compile
+ENV=test make deploy
+```
+
+# License
 
 Licensed under the terms of the [GPL-3](./LICENSE.md) or later.

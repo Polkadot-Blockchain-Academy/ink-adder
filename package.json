@@ -4,7 +4,7 @@
     "author": "fbielejec",
     "license": "MIT",
     "description": "adder SC",
-    "scripts": {
+    "scripts": {        
         "watch": "gulp default",        
         "compile": "typechain-compiler --release --toolchain nightly-2023-05-31",
         "deploy": "npm config set script-shell \"/bin/bash\"; ts-node deploy.ts"
