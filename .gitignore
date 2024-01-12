@@ -8,3 +8,13 @@
 # More information here http://doc.crates.io/guide.html#cargotoml-vs-cargolock
 Cargo.lock
  markdown-code-fontification:rustic-mode
+
+# docker files
+devnet-azero/5D34dL5prEUaGNQtPPZ3yN5Y6BnkfXunKXXz6fo7ZJbLwRRH/backup-stash/
+devnet-azero/5D34dL5prEUaGNQtPPZ3yN5Y6BnkfXunKXXz6fo7ZJbLwRRH/chains/a0dnet1/db/
+
+# typechain compiler
+artifacts/
+types/
+node_modules/
+addresses.json
