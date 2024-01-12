@@ -50,6 +50,7 @@ make devnet
 Compile & deploy:
 
 ```bash
+make deps
 make compile
 make deploy
 ```
