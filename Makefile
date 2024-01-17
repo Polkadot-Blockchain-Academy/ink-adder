@@ -27,7 +27,7 @@ compile:
 .PHONY: devnet-azero
 devnet: # Run azero devnet
 devnet:
-	docker-compose -f ./devnet-azero/devnet-azero-compose.yml up
+	docker-compose -f ./devnet-azero/devnet-azero-compose.yml up --remove-orphans
 
 .PHONY: clean
 clean: # Remove all node data
